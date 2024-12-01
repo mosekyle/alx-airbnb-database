@@ -1,6 +1,6 @@
-# ALX Airbnb Database Project
+# Airbnb Database Project
 
-Welcome to the ALX Airbnb Database Project! This repository is part of the **ALX Airbnb Database Module**, focusing on designing and building a robust relational database for an Airbnb-like application. The project covers database design, normalization, schema creation, and seeding, simulating a production-level database system with real-world functionality.
+Welcome to the Airbnb Database Project! This repository is part of the ** Airbnb Database Module**, focusing on designing and building a robust relational database for an Airbnb-like application. The project covers database design, normalization, schema creation, and seeding, simulating a production-level database system with real-world functionality.
 
 ## Table of Contents
 - [About the Project](#about-the-project)
@@ -15,7 +15,7 @@ Welcome to the ALX Airbnb Database Project! This repository is part of the **ALX
 
 ## About the Project
 
-This project is part of the comprehensive ALX Airbnb Database Module. It focuses on:
+This project is part of the comprehensive Airbnb Database Module. It focuses on:
 - Database design and normalization.
 - Schema creation using SQL.
 - Populating the database with realistic sample data.
