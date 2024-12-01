@@ -29,7 +29,7 @@ INNER JOIN
     users u ON b.user_id = u.user_id;
 
 
-```sql
+
 SELECT 
     p.property_id,
     p.property_name,
@@ -42,7 +42,6 @@ LEFT JOIN
 
 
 
-```sql
 SELECT 
     u.user_id,
     u.user_name,
