@@ -31,6 +31,20 @@ This repository contains SQL queries designed to demonstrate the use of both cor
 - **Query File**: `subqueries.sql`
 - **Objective**: This query uses a correlated subquery to count the number of bookings for each user and filters those who have made more than 3 bookings.
 
+### 2. **Apply Aggregations and Window Functions**
+- **Objective**: Use SQL aggregation and window functions to analyze data.
+
+#### 1. **Find the total number of bookings made by each user**
+- **Query File**: `aggregations_and_window_functions.sql`
+
+- The COUNT function counts the total number of bookings made by each user.
+- The GROUP BY clause groups the data by user_id to calculate the total bookings for each user.
+- The COUNT function is used to calculate the total bookings for each property.
+- The RANK() window function assigns a rank to each property based on the total bookings in descending order.
+- The GROUP BY clause groups the data by property_id.
+- The ORDER BY clause sorts the results by the rank to display the most booked properties first.
+
+
 
 
 ```sql
@@ -83,6 +97,18 @@ FROM
     users u
 WHERE 
     (SELECT COUNT(b.booking_id) FROM bookings b WHERE b.user_id = u.user_id) > 3;
+
+
+SELECT 
+    user_id,
+    COUNT(booking_id) AS total_bookings
+FROM 
+    bookings
+GROUP BY 
+    user_id;
+
+
+
 
 
 
